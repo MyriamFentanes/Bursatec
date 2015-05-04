@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: META-INF.org.apache.camel.example.liquidacion.model,or
+ g.apache.camel.example.liquidacion.model;uses:="org.apache.commons.la
+ ng.builder,org.apache.camel.dataformat.bindy.annotation"
+Built-By: mfentanes
+Build-Jdk: 1.7.0_71
+Bundle-Version: 1.0.0.SNAPSHOT
+Tool: Bnd-0.0.357
+Bundle-Name: Reportincident :: Model Bundle
+Bnd-LastModified: 1430760570283
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: liquidacion-model
+Import-Package: META-INF.org.apache.camel.example.liquidacion.model,or
+ g.apache.camel.dataformat.bindy.annotation;version="2.12",org.apache.
+ camel.example.liquidacion.model,org.apache.commons.lang.builder;versi
+ on="2.4"
+

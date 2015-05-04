@@ -1,0 +1,6 @@
+org/apache/camel/example/liquidacion/ObjectFactory.class
+org/apache/camel/example/liquidacion/package-info.class
+org/apache/camel/example/liquidacion/ReportIncidentEndpoint.class
+org/apache/camel/example/liquidacion/InputReportIncident.class
+org/apache/camel/example/liquidacion/OutputReportIncident.class
+org/apache/camel/example/liquidacion/ReportIncidentEndpointService.class

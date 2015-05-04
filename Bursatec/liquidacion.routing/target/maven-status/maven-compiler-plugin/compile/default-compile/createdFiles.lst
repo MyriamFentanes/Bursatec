@@ -1,0 +1,3 @@
+org/apache/camel/example/liquidacion/internal/WebService.class
+org/apache/camel/example/liquidacion/internal/Feedback.class
+org/apache/camel/example/liquidacion/internal/IncidentSaver.class

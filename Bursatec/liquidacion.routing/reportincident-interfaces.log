@@ -1,0 +1,483 @@
+2015-04-28 22:20:55,605 [main           ] DEBUG DefaultCamelContext            - Adding routes from builder: Routes: []
+2015-04-28 22:20:55,671 [main           ] INFO  DefaultCamelContext            - Apache Camel 2.4.0-fuse-01-00 (CamelContext: camel-1) is starting
+2015-04-28 22:20:55,671 [main           ] INFO  DefaultCamelContext            - JMX enabled. Using ManagedManagementStrategy.
+2015-04-28 22:20:55,802 [main           ] DEBUG DefaultManagementAgent         - Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@599f53db
+2015-04-28 22:20:55,914 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=context,name="camel-1"
+2015-04-28 22:20:55,958 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultTypeConverter(0x2a1d557)
+2015-04-28 22:20:55,958 [main           ] DEBUG DefaultTypeConverter           - Loading type converters ...
+2015-04-28 22:20:55,959 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/camel/camel-core/2.4.0-fuse-01-00/camel-core-2.4.0-fuse-01-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:20:55,962 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/camel/camel-cxf/2.4.0-fuse-01-00/camel-cxf-2.4.0-fuse-01-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:20:55,963 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/activemq/activemq-camel/5.4.0-fuse-00-00/activemq-camel-5.4.0-fuse-00-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:20:55,966 [main           ] DEBUG efaultPackageScanClassResolver - Searching for annotations of org.apache.camel.Converter in packages: [org.apache.camel.component.file, org.apache.camel.component.bean, org.apache.camel.converter, org.apache.activemq.camel.converter, org.apache.camel.component.cxf.converter]
+2015-04-28 22:20:56,796 [main           ] DEBUG efaultPackageScanClassResolver - Found: [class org.apache.camel.component.file.GenericFileConverter, class org.apache.camel.component.bean.BeanConverter, class org.apache.camel.converter.CamelConverter, class org.apache.camel.converter.CollectionConverter, class org.apache.camel.converter.IOConverter, class org.apache.camel.converter.NIOConverter, class org.apache.camel.converter.ObjectConverter, class org.apache.camel.converter.TimePatternConverter, class org.apache.camel.converter.jaxp.DomConverter, class org.apache.camel.converter.jaxp.StaxConverter, class org.apache.camel.converter.jaxp.StreamSourceConverter, class org.apache.camel.converter.jaxp.XmlConverter, class org.apache.camel.converter.stream.StreamCacheConverter, class org.apache.camel.converter.InstanceMethodWithExchangeTestConverter, class org.apache.camel.converter.InstanceDummyFallbackConverter, class org.apache.camel.converter.MyFallbackPromoteConverter, class org.apache.camel.converter.StaticDummyFallbackConverter, class org.apache.camel.converter.PurchaseOrderConverter, class org.apache.camel.converter.StaticMethodWithExchangeTestConverter, class org.apache.activemq.camel.converter.ActiveMQConverter, class org.apache.activemq.camel.converter.ActiveMQMessageConverter, class org.apache.camel.component.cxf.converter.CxfConverter]
+2015-04-28 22:20:56,796 [main           ] INFO  AnnotationTypeConverterLoader  - Found 5 packages with 22 @Converter classes to load
+2015-04-28 22:20:56,796 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.file.GenericFileConverter
+2015-04-28 22:20:56,801 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.bean.BeanConverter
+2015-04-28 22:20:56,801 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.CamelConverter
+2015-04-28 22:20:56,802 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.CollectionConverter
+2015-04-28 22:20:56,803 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.IOConverter
+2015-04-28 22:20:56,809 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.NIOConverter
+2015-04-28 22:20:56,811 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.ObjectConverter
+2015-04-28 22:20:56,812 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.TimePatternConverter
+2015-04-28 22:20:56,812 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.DomConverter
+2015-04-28 22:20:56,813 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.StaxConverter
+2015-04-28 22:20:56,816 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.StreamSourceConverter
+2015-04-28 22:20:56,816 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.XmlConverter
+2015-04-28 22:20:56,822 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.stream.StreamCacheConverter
+2015-04-28 22:20:56,823 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.InstanceMethodWithExchangeTestConverter
+2015-04-28 22:20:56,823 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.InstanceDummyFallbackConverter
+2015-04-28 22:20:56,824 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.MyFallbackPromoteConverter
+2015-04-28 22:20:56,824 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.StaticDummyFallbackConverter
+2015-04-28 22:20:56,825 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.PurchaseOrderConverter
+2015-04-28 22:20:56,825 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.StaticMethodWithExchangeTestConverter
+2015-04-28 22:20:56,825 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.activemq.camel.converter.ActiveMQConverter
+2015-04-28 22:20:56,830 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.activemq.camel.converter.ActiveMQMessageConverter
+2015-04-28 22:20:56,838 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.cxf.converter.CxfConverter
+2015-04-28 22:20:56,845 [main           ] DEBUG DefaultTypeConverter           - Loading type converters done
+2015-04-28 22:20:56,850 [main           ] INFO  DefaultTypeConverter           - Loaded 157 type converters in 0.887 seconds
+2015-04-28 22:20:56,857 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultExecutorServiceStrategy(0x2e7bdad4)
+2015-04-28 22:20:56,864 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=SharedProducerServicePool(0x455bac23)
+2015-04-28 22:20:56,864 [main           ] DEBUG SharedProducerServicePool      - Starting service pool: org.apache.camel.impl.SharedProducerServicePool@455bac23
+2015-04-28 22:20:56,870 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultInflightRepository(0x43c9b57e)
+2015-04-28 22:20:56,877 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultShutdownStrategy(0x6faa85f6)
+2015-04-28 22:20:56,879 [main           ] DEBUG RouteDefinition                - Using AutoStartup true on route: Route[[From[cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl/report_incident.wsdl]] -> [convertBodyTo[org.apache.camel.example.reportincident.InputReportIncident], Transform[{org.apache.camel.example.reportincident.OutputReportIncident@4472a836}]]]
+2015-04-28 22:20:56,885 [main           ] DEBUG DefaultComponentResolver       - Found component: cxf via type: org.apache.camel.component.cxf.CxfComponent via: META-INF/services/org/apache/camel/component/cxf
+2015-04-28 22:20:56,892 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=components,name="cxf"
+2015-04-28 22:20:56,893 [main           ] DEBUG DefaultComponent               - Creating endpoint uri=[cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl%2Freport_incident.wsdl], path=[http://localhost:8080/camel-example/incident], parameters=[{serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint, wsdlURL=wsdl/report_incident.wsdl}]
+2015-04-28 22:20:56,905 [main           ] DEBUG DefaultCamelContext            - cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl%2Freport_incident.wsdl converted to endpoint: Endpoint[http://localhost:8080/camel-example/incident] by component: org.apache.camel.component.cxf.CxfComponent@74d0d91c
+2015-04-28 22:20:56,917 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=CxfEndpoint(0x3b5df92e)
+2015-04-28 22:20:56,928 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=endpoints,name="http://localhost:8080/camel-example/incident"
+2015-04-28 22:20:56,980 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=tracer,name=Tracer(0x4f37f217)
+2015-04-28 22:20:57,020 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+2015-04-28 22:20:57,026 [main           ] DEBUG DefaultCamelContext            - Starting routes...
+2015-04-28 22:20:57,060 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=routes,name="route1"
+2015-04-28 22:20:57,162 [main           ] INFO  BusApplicationContext          - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@78c10888: display name [org.apache.cxf.bus.spring.BusApplicationContext@78c10888]; startup date [Tue Apr 28 22:20:57 CDT 2015]; root of context hierarchy
+2015-04-28 22:20:57,218 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2015-04-28 22:20:57,372 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2015-04-28 22:20:57,374 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2015-04-28 22:20:57,379 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2015-04-28 22:20:57,382 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2015-04-28 22:20:57,388 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:20:57,393 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-corba.xml]
+2015-04-28 22:20:57,398 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2015-04-28 22:20:57,401 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2015-04-28 22:20:57,405 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2015-04-28 22:20:57,407 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2015-04-28 22:20:57,409 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-javascript-client.xml]
+2015-04-28 22:20:57,411 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-local.xml]
+2015-04-28 22:20:57,413 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:20:57,416 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-management.xml]
+2015-04-28 22:20:57,420 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http-jetty.xml]
+2015-04-28 22:20:57,425 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:20:57,428 [main           ] DEBUG idationXmlBeanDefinitionReader - Loaded 0 bean definitions from location pattern [classpath:META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:20:57,429 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jms.xml]
+2015-04-28 22:20:57,431 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-object-binding.xml]
+2015-04-28 22:20:57,434 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http-binding.xml]
+2015-04-28 22:20:57,436 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxrs-binding.xml]
+2015-04-28 22:20:57,437 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2015-04-28 22:20:57,439 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-policy.xml]
+2015-04-28 22:20:57,443 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-rm.xml]
+2015-04-28 22:20:57,446 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-camel.xml]
+2015-04-28 22:20:57,448 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxrs-binding.xml]
+2015-04-28 22:20:57,450 [main           ] INFO  BusApplicationContext          - Bean factory for application context [org.apache.cxf.bus.spring.BusApplicationContext@78c10888]: org.springframework.beans.factory.support.DefaultListableBeanFactory@407df228
+2015-04-28 22:20:57,450 [main           ] DEBUG BusApplicationContext          - 60 beans defined in org.apache.cxf.bus.spring.BusApplicationContext@78c10888: display name [org.apache.cxf.bus.spring.BusApplicationContext@78c10888]; startup date [Tue Apr 28 22:20:57 CDT 2015]; root of context hierarchy
+2015-04-28 22:20:57,540 [main           ] DEBUG BusApplicationContext          - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@690e1883]
+2015-04-28 22:20:57,541 [main           ] DEBUG BusApplicationContext          - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4c45d8fb]
+2015-04-28 22:20:58,218 [main           ] DEBUG CxfEndpoint                    - Using DefaultBus org.apache.cxf.bus.CXFBusImpl@5b02b5ab
+2015-04-28 22:20:59,346 [main           ] INFO  CamelNamespaceHandler          - OSGi environment not detected.
+2015-04-28 22:20:59,347 [main           ] DEBUG CamelNamespaceHandler          - Using org.apache.camel.spring.CamelContextFactoryBean as CamelContextBeanDefinitionParser
+2015-04-28 22:20:59,349 [main           ] ERROR TestContextManager             - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5edc2a37] to prepare test instance [org.apache.camel.example.reportincident.ReportIncidentRoutesTest@4857b188]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:201)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:255)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:111)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.invokeTestMethod(SpringJUnit4ClassRunner.java:148)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:97)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [org/apache/camel/example/reportincident/ReportIncidentRoutesTest-context.xml]; nested exception is org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.camel.osgi.CamelNamespaceHandler] for namespace [http://camel.apache.org/schema/osgi]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:420)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:42)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:173)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:197)
+	... 23 more
+Caused by: org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.camel.osgi.CamelNamespaceHandler] for namespace [http://camel.apache.org/schema/osgi]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:138)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1292)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1287)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:92)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:507)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	... 33 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.apache.camel.osgi.CamelNamespaceHandler.init(CamelNamespaceHandler.java:26)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:129)
+	... 39 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.osgi.context.BundleContextAware
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 53 more
+2015-04-28 22:21:23,180 [main           ] DEBUG DefaultCamelContext            - Adding routes from builder: Routes: []
+2015-04-28 22:21:23,257 [main           ] INFO  DefaultCamelContext            - Apache Camel 2.4.0-fuse-01-00 (CamelContext: camel-1) is starting
+2015-04-28 22:21:23,257 [main           ] INFO  DefaultCamelContext            - JMX enabled. Using ManagedManagementStrategy.
+2015-04-28 22:21:23,358 [main           ] DEBUG DefaultManagementAgent         - Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@4cd9794b
+2015-04-28 22:21:23,468 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=context,name="camel-1"
+2015-04-28 22:21:23,498 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultTypeConverter(0x19b271ad)
+2015-04-28 22:21:23,498 [main           ] DEBUG DefaultTypeConverter           - Loading type converters ...
+2015-04-28 22:21:23,499 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/camel/camel-core/2.4.0-fuse-01-00/camel-core-2.4.0-fuse-01-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:21:23,502 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/camel/camel-cxf/2.4.0-fuse-01-00/camel-cxf-2.4.0-fuse-01-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:21:23,503 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/activemq/activemq-camel/5.4.0-fuse-00-00/activemq-camel-5.4.0-fuse-00-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:21:23,505 [main           ] DEBUG efaultPackageScanClassResolver - Searching for annotations of org.apache.camel.Converter in packages: [org.apache.camel.component.file, org.apache.camel.component.bean, org.apache.camel.converter, org.apache.activemq.camel.converter, org.apache.camel.component.cxf.converter]
+2015-04-28 22:21:24,276 [main           ] DEBUG efaultPackageScanClassResolver - Found: [class org.apache.camel.component.file.GenericFileConverter, class org.apache.camel.component.bean.BeanConverter, class org.apache.camel.converter.CamelConverter, class org.apache.camel.converter.CollectionConverter, class org.apache.camel.converter.IOConverter, class org.apache.camel.converter.NIOConverter, class org.apache.camel.converter.ObjectConverter, class org.apache.camel.converter.TimePatternConverter, class org.apache.camel.converter.jaxp.DomConverter, class org.apache.camel.converter.jaxp.StaxConverter, class org.apache.camel.converter.jaxp.StreamSourceConverter, class org.apache.camel.converter.jaxp.XmlConverter, class org.apache.camel.converter.stream.StreamCacheConverter, class org.apache.camel.converter.InstanceMethodWithExchangeTestConverter, class org.apache.camel.converter.InstanceDummyFallbackConverter, class org.apache.camel.converter.MyFallbackPromoteConverter, class org.apache.camel.converter.StaticDummyFallbackConverter, class org.apache.camel.converter.PurchaseOrderConverter, class org.apache.camel.converter.StaticMethodWithExchangeTestConverter, class org.apache.activemq.camel.converter.ActiveMQConverter, class org.apache.activemq.camel.converter.ActiveMQMessageConverter, class org.apache.camel.component.cxf.converter.CxfConverter]
+2015-04-28 22:21:24,276 [main           ] INFO  AnnotationTypeConverterLoader  - Found 5 packages with 22 @Converter classes to load
+2015-04-28 22:21:24,276 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.file.GenericFileConverter
+2015-04-28 22:21:24,280 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.bean.BeanConverter
+2015-04-28 22:21:24,280 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.CamelConverter
+2015-04-28 22:21:24,282 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.CollectionConverter
+2015-04-28 22:21:24,283 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.IOConverter
+2015-04-28 22:21:24,289 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.NIOConverter
+2015-04-28 22:21:24,290 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.ObjectConverter
+2015-04-28 22:21:24,291 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.TimePatternConverter
+2015-04-28 22:21:24,291 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.DomConverter
+2015-04-28 22:21:24,292 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.StaxConverter
+2015-04-28 22:21:24,295 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.StreamSourceConverter
+2015-04-28 22:21:24,295 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.XmlConverter
+2015-04-28 22:21:24,301 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.stream.StreamCacheConverter
+2015-04-28 22:21:24,302 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.InstanceMethodWithExchangeTestConverter
+2015-04-28 22:21:24,302 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.InstanceDummyFallbackConverter
+2015-04-28 22:21:24,303 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.MyFallbackPromoteConverter
+2015-04-28 22:21:24,303 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.StaticDummyFallbackConverter
+2015-04-28 22:21:24,304 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.PurchaseOrderConverter
+2015-04-28 22:21:24,304 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.StaticMethodWithExchangeTestConverter
+2015-04-28 22:21:24,304 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.activemq.camel.converter.ActiveMQConverter
+2015-04-28 22:21:24,309 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.activemq.camel.converter.ActiveMQMessageConverter
+2015-04-28 22:21:24,317 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.cxf.converter.CxfConverter
+2015-04-28 22:21:24,324 [main           ] DEBUG DefaultTypeConverter           - Loading type converters done
+2015-04-28 22:21:24,329 [main           ] INFO  DefaultTypeConverter           - Loaded 157 type converters in 0.826 seconds
+2015-04-28 22:21:24,335 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultExecutorServiceStrategy(0x2eae85ab)
+2015-04-28 22:21:24,342 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=SharedProducerServicePool(0x43c9b57e)
+2015-04-28 22:21:24,342 [main           ] DEBUG SharedProducerServicePool      - Starting service pool: org.apache.camel.impl.SharedProducerServicePool@43c9b57e
+2015-04-28 22:21:24,348 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultInflightRepository(0x2c360dd8)
+2015-04-28 22:21:24,354 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultShutdownStrategy(0x10c6f695)
+2015-04-28 22:21:24,356 [main           ] DEBUG RouteDefinition                - Using AutoStartup true on route: Route[[From[cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl/report_incident.wsdl]] -> [convertBodyTo[org.apache.camel.example.reportincident.InputReportIncident], Transform[{org.apache.camel.example.reportincident.OutputReportIncident@40871449}]]]
+2015-04-28 22:21:24,363 [main           ] DEBUG DefaultComponentResolver       - Found component: cxf via type: org.apache.camel.component.cxf.CxfComponent via: META-INF/services/org/apache/camel/component/cxf
+2015-04-28 22:21:24,370 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=components,name="cxf"
+2015-04-28 22:21:24,371 [main           ] DEBUG DefaultComponent               - Creating endpoint uri=[cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl%2Freport_incident.wsdl], path=[http://localhost:8080/camel-example/incident], parameters=[{serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint, wsdlURL=wsdl/report_incident.wsdl}]
+2015-04-28 22:21:24,383 [main           ] DEBUG DefaultCamelContext            - cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl%2Freport_incident.wsdl converted to endpoint: Endpoint[http://localhost:8080/camel-example/incident] by component: org.apache.camel.component.cxf.CxfComponent@622f1be6
+2015-04-28 22:21:24,392 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=CxfEndpoint(0x2d0cb66)
+2015-04-28 22:21:24,402 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=endpoints,name="http://localhost:8080/camel-example/incident"
+2015-04-28 22:21:24,451 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=tracer,name=Tracer(0x27604c06)
+2015-04-28 22:21:24,490 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+2015-04-28 22:21:24,496 [main           ] DEBUG DefaultCamelContext            - Starting routes...
+2015-04-28 22:21:24,530 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=routes,name="route1"
+2015-04-28 22:21:24,624 [main           ] INFO  BusApplicationContext          - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@1d1a8b9: display name [org.apache.cxf.bus.spring.BusApplicationContext@1d1a8b9]; startup date [Tue Apr 28 22:21:24 CDT 2015]; root of context hierarchy
+2015-04-28 22:21:24,675 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2015-04-28 22:21:24,826 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2015-04-28 22:21:24,828 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2015-04-28 22:21:24,832 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2015-04-28 22:21:24,835 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2015-04-28 22:21:24,840 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:21:24,843 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-corba.xml]
+2015-04-28 22:21:24,847 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2015-04-28 22:21:24,849 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2015-04-28 22:21:24,852 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2015-04-28 22:21:24,854 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2015-04-28 22:21:24,857 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-javascript-client.xml]
+2015-04-28 22:21:24,858 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-local.xml]
+2015-04-28 22:21:24,860 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:21:24,863 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-management.xml]
+2015-04-28 22:21:24,865 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http-jetty.xml]
+2015-04-28 22:21:24,869 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:21:24,872 [main           ] DEBUG idationXmlBeanDefinitionReader - Loaded 0 bean definitions from location pattern [classpath:META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:21:24,873 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jms.xml]
+2015-04-28 22:21:24,876 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-object-binding.xml]
+2015-04-28 22:21:24,877 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http-binding.xml]
+2015-04-28 22:21:24,879 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxrs-binding.xml]
+2015-04-28 22:21:24,881 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2015-04-28 22:21:24,882 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-policy.xml]
+2015-04-28 22:21:24,887 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-rm.xml]
+2015-04-28 22:21:24,889 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-camel.xml]
+2015-04-28 22:21:24,891 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxrs-binding.xml]
+2015-04-28 22:21:24,893 [main           ] INFO  BusApplicationContext          - Bean factory for application context [org.apache.cxf.bus.spring.BusApplicationContext@1d1a8b9]: org.springframework.beans.factory.support.DefaultListableBeanFactory@14c824ad
+2015-04-28 22:21:24,893 [main           ] DEBUG BusApplicationContext          - 60 beans defined in org.apache.cxf.bus.spring.BusApplicationContext@1d1a8b9: display name [org.apache.cxf.bus.spring.BusApplicationContext@1d1a8b9]; startup date [Tue Apr 28 22:21:24 CDT 2015]; root of context hierarchy
+2015-04-28 22:21:24,983 [main           ] DEBUG BusApplicationContext          - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7a711d71]
+2015-04-28 22:21:24,984 [main           ] DEBUG BusApplicationContext          - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@a0c665b]
+2015-04-28 22:21:25,616 [main           ] DEBUG CxfEndpoint                    - Using DefaultBus org.apache.cxf.bus.CXFBusImpl@395c82f9
+2015-04-28 22:21:26,789 [main           ] INFO  CamelNamespaceHandler          - OSGi environment not detected.
+2015-04-28 22:21:26,790 [main           ] DEBUG CamelNamespaceHandler          - Using org.apache.camel.spring.CamelContextFactoryBean as CamelContextBeanDefinitionParser
+2015-04-28 22:21:26,793 [main           ] ERROR TestContextManager             - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@38053dd4] to prepare test instance [org.apache.camel.example.reportincident.ReportIncidentRoutesTest@601e4607]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:201)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:255)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:111)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.invokeTestMethod(SpringJUnit4ClassRunner.java:148)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:97)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [org/apache/camel/example/reportincident/ReportIncidentRoutesTest-context.xml]; nested exception is org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.camel.osgi.CamelNamespaceHandler] for namespace [http://camel.apache.org/schema/osgi]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:420)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:42)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:173)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:197)
+	... 23 more
+Caused by: org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.camel.osgi.CamelNamespaceHandler] for namespace [http://camel.apache.org/schema/osgi]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:138)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1292)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1287)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:92)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:507)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	... 33 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.apache.camel.osgi.CamelNamespaceHandler.init(CamelNamespaceHandler.java:26)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:129)
+	... 39 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.osgi.context.BundleContextAware
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 53 more
+2015-04-28 22:25:31,063 [main           ] DEBUG DefaultCamelContext            - Adding routes from builder: Routes: []
+2015-04-28 22:25:31,105 [main           ] INFO  DefaultCamelContext            - Apache Camel 2.4.0-fuse-01-00 (CamelContext: camel-1) is starting
+2015-04-28 22:25:31,105 [main           ] INFO  DefaultCamelContext            - JMX enabled. Using ManagedManagementStrategy.
+2015-04-28 22:25:31,186 [main           ] DEBUG DefaultManagementAgent         - Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@448558b7
+2015-04-28 22:25:31,286 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=context,name="camel-1"
+2015-04-28 22:25:31,315 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultTypeConverter(0x6bf7137)
+2015-04-28 22:25:31,316 [main           ] DEBUG DefaultTypeConverter           - Loading type converters ...
+2015-04-28 22:25:31,316 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/camel/camel-core/2.4.0-fuse-01-00/camel-core-2.4.0-fuse-01-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:25:31,319 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/camel/camel-cxf/2.4.0-fuse-01-00/camel-cxf-2.4.0-fuse-01-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:25:31,320 [main           ] INFO  AnnotationTypeConverterLoader  - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/home/mfentanes/.m2/repository/org/apache/activemq/activemq-camel/5.4.0-fuse-00-00/activemq-camel-5.4.0-fuse-00-00.jar!/META-INF/services/org/apache/camel/TypeConverter
+2015-04-28 22:25:31,321 [main           ] DEBUG efaultPackageScanClassResolver - Searching for annotations of org.apache.camel.Converter in packages: [org.apache.camel.component.file, org.apache.camel.component.bean, org.apache.camel.converter, org.apache.activemq.camel.converter, org.apache.camel.component.cxf.converter]
+2015-04-28 22:25:32,103 [main           ] DEBUG efaultPackageScanClassResolver - Found: [class org.apache.camel.component.file.GenericFileConverter, class org.apache.camel.component.bean.BeanConverter, class org.apache.camel.converter.CamelConverter, class org.apache.camel.converter.CollectionConverter, class org.apache.camel.converter.IOConverter, class org.apache.camel.converter.NIOConverter, class org.apache.camel.converter.ObjectConverter, class org.apache.camel.converter.TimePatternConverter, class org.apache.camel.converter.jaxp.DomConverter, class org.apache.camel.converter.jaxp.StaxConverter, class org.apache.camel.converter.jaxp.StreamSourceConverter, class org.apache.camel.converter.jaxp.XmlConverter, class org.apache.camel.converter.stream.StreamCacheConverter, class org.apache.camel.converter.InstanceMethodWithExchangeTestConverter, class org.apache.camel.converter.InstanceDummyFallbackConverter, class org.apache.camel.converter.MyFallbackPromoteConverter, class org.apache.camel.converter.StaticDummyFallbackConverter, class org.apache.camel.converter.PurchaseOrderConverter, class org.apache.camel.converter.StaticMethodWithExchangeTestConverter, class org.apache.activemq.camel.converter.ActiveMQConverter, class org.apache.activemq.camel.converter.ActiveMQMessageConverter, class org.apache.camel.component.cxf.converter.CxfConverter]
+2015-04-28 22:25:32,103 [main           ] INFO  AnnotationTypeConverterLoader  - Found 5 packages with 22 @Converter classes to load
+2015-04-28 22:25:32,103 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.file.GenericFileConverter
+2015-04-28 22:25:32,108 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.bean.BeanConverter
+2015-04-28 22:25:32,108 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.CamelConverter
+2015-04-28 22:25:32,110 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.CollectionConverter
+2015-04-28 22:25:32,111 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.IOConverter
+2015-04-28 22:25:32,120 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.NIOConverter
+2015-04-28 22:25:32,121 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.ObjectConverter
+2015-04-28 22:25:32,123 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.TimePatternConverter
+2015-04-28 22:25:32,124 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.DomConverter
+2015-04-28 22:25:32,125 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.StaxConverter
+2015-04-28 22:25:32,129 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.StreamSourceConverter
+2015-04-28 22:25:32,129 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.jaxp.XmlConverter
+2015-04-28 22:25:32,137 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.stream.StreamCacheConverter
+2015-04-28 22:25:32,137 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.InstanceMethodWithExchangeTestConverter
+2015-04-28 22:25:32,138 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.InstanceDummyFallbackConverter
+2015-04-28 22:25:32,138 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.MyFallbackPromoteConverter
+2015-04-28 22:25:32,139 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.StaticDummyFallbackConverter
+2015-04-28 22:25:32,139 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.PurchaseOrderConverter
+2015-04-28 22:25:32,139 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.converter.StaticMethodWithExchangeTestConverter
+2015-04-28 22:25:32,139 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.activemq.camel.converter.ActiveMQConverter
+2015-04-28 22:25:32,146 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.activemq.camel.converter.ActiveMQMessageConverter
+2015-04-28 22:25:32,157 [main           ] DEBUG AnnotationTypeConverterLoader  - Loading converter class: org.apache.camel.component.cxf.converter.CxfConverter
+2015-04-28 22:25:32,166 [main           ] DEBUG DefaultTypeConverter           - Loading type converters done
+2015-04-28 22:25:32,171 [main           ] INFO  DefaultTypeConverter           - Loaded 157 type converters in 0.850 seconds
+2015-04-28 22:25:32,177 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultExecutorServiceStrategy(0xa0c508b)
+2015-04-28 22:25:32,184 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=SharedProducerServicePool(0x2e7bdad4)
+2015-04-28 22:25:32,184 [main           ] DEBUG SharedProducerServicePool      - Starting service pool: org.apache.camel.impl.SharedProducerServicePool@2e7bdad4
+2015-04-28 22:25:32,190 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultInflightRepository(0x2eae85ab)
+2015-04-28 22:25:32,196 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=DefaultShutdownStrategy(0x43c9b57e)
+2015-04-28 22:25:32,199 [main           ] DEBUG RouteDefinition                - Using AutoStartup true on route: Route[[From[cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl/report_incident.wsdl]] -> [convertBodyTo[org.apache.camel.example.reportincident.InputReportIncident], Transform[{org.apache.camel.example.reportincident.OutputReportIncident@46bf784b}]]]
+2015-04-28 22:25:32,205 [main           ] DEBUG DefaultComponentResolver       - Found component: cxf via type: org.apache.camel.component.cxf.CxfComponent via: META-INF/services/org/apache/camel/component/cxf
+2015-04-28 22:25:32,213 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=components,name="cxf"
+2015-04-28 22:25:32,213 [main           ] DEBUG DefaultComponent               - Creating endpoint uri=[cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl%2Freport_incident.wsdl], path=[http://localhost:8080/camel-example/incident], parameters=[{serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint, wsdlURL=wsdl/report_incident.wsdl}]
+2015-04-28 22:25:32,227 [main           ] DEBUG DefaultCamelContext            - cxf://http://localhost:8080/camel-example/incident?serviceClass=org.apache.camel.example.reportincident.ReportIncidentEndpoint&wsdlURL=wsdl%2Freport_incident.wsdl converted to endpoint: Endpoint[http://localhost:8080/camel-example/incident] by component: org.apache.camel.component.cxf.CxfComponent@24422ddc
+2015-04-28 22:25:32,237 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=services,name=CxfEndpoint(0x74d0d91c)
+2015-04-28 22:25:32,248 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=endpoints,name="http://localhost:8080/camel-example/incident"
+2015-04-28 22:25:32,298 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=tracer,name=Tracer(0x4d38d924)
+2015-04-28 22:25:32,337 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+2015-04-28 22:25:32,343 [main           ] DEBUG DefaultCamelContext            - Starting routes...
+2015-04-28 22:25:32,378 [main           ] DEBUG DefaultManagementAgent         - Registered MBean with objectname: org.apache.camel:context=dhcp-32-215.mex.redhat.com/camel-1,type=routes,name="route1"
+2015-04-28 22:25:32,474 [main           ] INFO  BusApplicationContext          - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@42847468: display name [org.apache.cxf.bus.spring.BusApplicationContext@42847468]; startup date [Tue Apr 28 22:25:32 CDT 2015]; root of context hierarchy
+2015-04-28 22:25:32,529 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2015-04-28 22:25:32,680 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2015-04-28 22:25:32,683 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2015-04-28 22:25:32,687 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2015-04-28 22:25:32,689 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2015-04-28 22:25:32,694 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:25:32,698 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-corba.xml]
+2015-04-28 22:25:32,701 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2015-04-28 22:25:32,704 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2015-04-28 22:25:32,708 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2015-04-28 22:25:32,710 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2015-04-28 22:25:32,713 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-javascript-client.xml]
+2015-04-28 22:25:32,714 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-local.xml]
+2015-04-28 22:25:32,716 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:25:32,719 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-management.xml]
+2015-04-28 22:25:32,721 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http-jetty.xml]
+2015-04-28 22:25:32,726 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:25:32,729 [main           ] DEBUG idationXmlBeanDefinitionReader - Loaded 0 bean definitions from location pattern [classpath:META-INF/cxf/cxf-extension-http.xml]
+2015-04-28 22:25:32,730 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jms.xml]
+2015-04-28 22:25:32,732 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-object-binding.xml]
+2015-04-28 22:25:32,733 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http-binding.xml]
+2015-04-28 22:25:32,735 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxrs-binding.xml]
+2015-04-28 22:25:32,737 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2015-04-28 22:25:32,739 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-policy.xml]
+2015-04-28 22:25:32,743 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-rm.xml]
+2015-04-28 22:25:32,746 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-camel.xml]
+2015-04-28 22:25:32,748 [main           ] INFO  idationXmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxrs-binding.xml]
+2015-04-28 22:25:32,750 [main           ] INFO  BusApplicationContext          - Bean factory for application context [org.apache.cxf.bus.spring.BusApplicationContext@42847468]: org.springframework.beans.factory.support.DefaultListableBeanFactory@e970846
+2015-04-28 22:25:32,750 [main           ] DEBUG BusApplicationContext          - 60 beans defined in org.apache.cxf.bus.spring.BusApplicationContext@42847468: display name [org.apache.cxf.bus.spring.BusApplicationContext@42847468]; startup date [Tue Apr 28 22:25:32 CDT 2015]; root of context hierarchy
+2015-04-28 22:25:32,835 [main           ] DEBUG BusApplicationContext          - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2f4a2d88]
+2015-04-28 22:25:32,837 [main           ] DEBUG BusApplicationContext          - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@7785b73c]
+2015-04-28 22:25:33,459 [main           ] DEBUG CxfEndpoint                    - Using DefaultBus org.apache.cxf.bus.CXFBusImpl@3baf24e2
+2015-04-28 22:25:34,618 [main           ] INFO  CamelNamespaceHandler          - OSGi environment not detected.
+2015-04-28 22:25:34,619 [main           ] DEBUG CamelNamespaceHandler          - Using org.apache.camel.spring.CamelContextFactoryBean as CamelContextBeanDefinitionParser
+2015-04-28 22:25:34,621 [main           ] ERROR TestContextManager             - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4857b188] to prepare test instance [org.apache.camel.example.reportincident.ReportIncidentRoutesTest@75487cd2]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:201)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:255)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:111)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.invokeTestMethod(SpringJUnit4ClassRunner.java:148)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:97)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [org/apache/camel/example/reportincident/ReportIncidentRoutesTest-context.xml]; nested exception is org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.camel.osgi.CamelNamespaceHandler] for namespace [http://camel.apache.org/schema/osgi]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:420)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:42)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:173)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:197)
+	... 23 more
+Caused by: org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.camel.osgi.CamelNamespaceHandler] for namespace [http://camel.apache.org/schema/osgi]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:138)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1292)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1287)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:92)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:507)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	... 33 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/osgi/context/BundleContextAware
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.apache.camel.osgi.CamelNamespaceHandler.init(CamelNamespaceHandler.java:26)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:129)
+	... 39 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.osgi.context.BundleContextAware
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 53 more
