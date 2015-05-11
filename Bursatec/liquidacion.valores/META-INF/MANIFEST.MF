@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Export-Package: META-INF.wsdl,org.apache.camel.example.liquidacion.ser
+ vice;uses:="org.apache.camel.example.liquidacion.model";version="1.0.
+ 0.SNAPSHOT"
+Built-By: mfentanes
+Build-Jdk: 1.7.0_71
+Bundle-Version: 1.0.0.SNAPSHOT
+Tool: Bnd-0.0.357
+Bundle-Name: Reportincident :: Service Bundle
+Bnd-LastModified: 1430835214236
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: liquidacion.valores
+Import-Package: META-INF.wsdl,javax.jws,javax.jws.soap,javax.transacti
+ on,javax.xml.bind,javax.xml.bind.annotation,javax.xml.namespace,javax
+ .xml.ws,org.aopalliance.aop;version="1.0",org.apache.camel.example.li
+ quidacion.dao,org.apache.camel.example.liquidacion.model,org.apache.c
+ amel.example.liquidacion.service;version="1.0",org.apache.commons.log
+ ging,org.springframework.aop;version="2.5",org.springframework.aop.fr
+ amework;version="2.5",org.springframework.transaction;version="2.5",o
+ rg.springframework.transaction.interceptor;version="2.5"
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1431372852074_0" label="liquidacion.parent" name="liquidacion.parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/liquidacion.features" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/liquidacion.model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/liquidacion.persistence" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/liquidacion.service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/liquidacion.routing" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/liquidacion.webservice" type="4"/>
+</workingSet>
+</workingSetManager>
