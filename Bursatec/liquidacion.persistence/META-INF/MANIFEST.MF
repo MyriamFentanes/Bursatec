@@ -8,7 +8,7 @@ Created-By: Apache Maven Bundle Plugin
 DynamicImport-Package: *
 Build-Jdk: 1.7.0_71
 Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1431372891744
+Bnd-LastModified: 1431452317639
 Bundle-ManifestVersion: 2
 Import-Package: org.apache.camel.example.liquidacion.dao,org.apache.ca
  mel.example.liquidacion.model,org.apache.commons.logging

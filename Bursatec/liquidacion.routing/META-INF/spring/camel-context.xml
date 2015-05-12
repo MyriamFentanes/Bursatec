@@ -63,6 +63,7 @@
 	<cxf:cxfEndpoint id="reportIncident"
 		address="/camel-example/incident"
 		serviceClass="org.apache.camel.example.liquidacion.ReportIncidentEndpoint"
+		publishedEndpointUrl="http://localhost:9090/servicio/otra"
 		xmlns:s="http://liquidacion.example.camel.apache.org">
 	</cxf:cxfEndpoint>
 	

@@ -63,8 +63,8 @@
 	<!-- webservice endpoint --> 
 	<cxf:cxfEndpoint id="liquidacion"
 		address="/camel-example/incident"
-		serviceClass="org.apache.camel.example.liquidacion.liquidacionEndpoint"
-		xmlns:s="http://liquidacion.example.camel.apache.org">
+		serviceClass="org.apache.camel.example.liquidacion.ReportIncidentEndpoint"
+        xmlns:s="http://liquidacion.example.camel.apache.org">
 	</cxf:cxfEndpoint>
 	
 
@@ -85,11 +85,11 @@
 		</route>
 		 
 		<route>
-			<from uri="cxf:bean:liquidacion" />
+			<from uri="cxf:bean:liquidacion?dataFormat=MESSAGE&amp;publishedEndpointUrl=http://localhost:9090/servicio/otra/>
 			<setHeader headerName="origin">
 				<constant>webservice</constant>
 			</setHeader>
-			<convertBodyTo type="org.apache.camel.example.liquidacion.Inputliquidacion" />
+			<convertBodyTo type="org.apache.camel.example.liquidacion.InputReportIncident" />
 			<to uri="bean:webservice" />
 			<inOnly uri="active-mq:queue:in" />
 			<transform>

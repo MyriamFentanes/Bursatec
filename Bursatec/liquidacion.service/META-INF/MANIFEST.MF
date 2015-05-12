@@ -7,7 +7,7 @@ Build-Jdk: 1.7.0_71
 Bundle-Version: 1.0.0.SNAPSHOT
 Tool: Bnd-0.0.357
 Bundle-Name: Reportincident :: Service Bundle
-Bnd-LastModified: 1431372892518
+Bnd-LastModified: 1431452321268
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: liquidacion-service

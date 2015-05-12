@@ -30,6 +30,8 @@
     	<module>liquidacion.service</module>
     	<module>liquidacion.routing</module> 
 		<module>liquidacion.webservice</module>
+		<module>liquidacion.valores</module>
+		<module>liquidacion.efectivo</module>
 	</modules>
 	
    <properties>

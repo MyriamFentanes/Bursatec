@@ -25,7 +25,6 @@
 		<bundle>mvn:org.apache.camel.example/liquidacion-service/1.0-SNAPSHOT</bundle>
 		<bundle>mvn:org.apache.camel.example/liquidacion-webservice/1.0-SNAPSHOT</bundle>
 		<bundle>mvn:org.apache.camel.example/liquidacion-routing/1.0-SNAPSHOT</bundle>
-        <bundle>mvn:org.apache.camel.example/liquidacion-web/1.0-SNAPSHOT/war</bundle>
 	</feature>
 	
 	<feature name="spring-web">

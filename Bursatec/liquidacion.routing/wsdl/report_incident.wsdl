@@ -20,11 +20,11 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
 	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-	targetNamespace="http://reportincident.example.camel.apache.org">
+	targetNamespace="http://liquidacion.example.camel.apache.org">
 
     <!-- Type definitions for input- and output parameters for webservice -->
     <wsdl:types>
-        <xs:schema targetNamespace="http://reportincident.example.camel.apache.org">
+        <xs:schema targetNamespace="http://liquidacion.example.camel.apache.org">
             <xs:element name="inputReportIncident">
                 <xs:complexType name="inputReportIncident">
                     <xs:sequence>
